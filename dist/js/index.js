@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var Client_1 = require("./models/Client");
+var isAdmin_1 = require("./models/isAdmin");
 /*
 function sayHello(): void {
     console.log('Hello');
@@ -64,5 +65,6 @@ function createClient(idUser, name, surname, date) {
     return newClient;
 }
 var client1 = new Client_1.Client(2, 'Johny', 'Bigodes', new Date(1996, 4, 21));
+var admin1 = new isAdmin_1.isAdmin(1, 3, 'Sofia', 'Bigodaça', new Date(1970, 2, 23));
 client1.printData();
-console.log(client1.getIsAdmin());
+admin1.printData();

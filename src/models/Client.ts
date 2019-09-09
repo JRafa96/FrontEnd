@@ -17,7 +17,7 @@ export class Client implements IClient {
     }
 
     public getData(): string {
-        return `Hola, soy ${this.name} ${this.surname} (ID: ${this.idUser})}`
+        return `Hola, soy ${this.name} ${this.surname} (ID: ${this.idUser})`
     }
 
     public printData(): void {
@@ -30,14 +30,14 @@ export class Client implements IClient {
         return this.idUser;
     }
     public setIdUser(idUser : number) {
-        this.idUser = idUser;
+        
     }
 
     public getIsAdmin() : boolean {
         return this.isAdmin;
     }
     public setIsAdmin(isAdmin : boolean) {
-        this.isAdmin = isAdmin;
+        
     }
     
 

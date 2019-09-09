@@ -2,6 +2,7 @@
 
 import { Person } from './models/person';
 import { Client } from './models/Client';
+import { isAdmin } from './models/isAdmin';
 
 
 /*
@@ -71,8 +72,11 @@ function createClient(idUser: number, name: string, surname: string, date: Date)
 
 }
 
- var client1 = new Client(2,'Johny','Bigodes',new Date(1996,4,21));
+var client1 = new Client(2,'Johny','Bigodes',new Date(1996,4,21));
+
+
+
+var admin1 = new isAdmin(1,3, 'Sofia', 'Bigodaça', new Date(1970,2,23));
 
 client1.printData();
-
-console.log(client1.getIsAdmin())
+admin1.printData();

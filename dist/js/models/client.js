@@ -9,7 +9,7 @@ var Client = /** @class */ (function () {
         this.isAdmin = false;
     }
     Client.prototype.getData = function () {
-        return "Hola, soy " + this.name + " " + this.surname + " (ID: " + this.idUser + ")}";
+        return "Hola, soy " + this.name + " " + this.surname + " (ID: " + this.idUser + ")";
     };
     Client.prototype.printData = function () {
         console.log(this.getData());
@@ -18,13 +18,11 @@ var Client = /** @class */ (function () {
         return this.idUser;
     };
     Client.prototype.setIdUser = function (idUser) {
-        this.idUser = idUser;
     };
     Client.prototype.getIsAdmin = function () {
         return this.isAdmin;
     };
     Client.prototype.setIsAdmin = function (isAdmin) {
-        this.isAdmin = isAdmin;
     };
     return Client;
 }());
