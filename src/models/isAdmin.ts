@@ -9,9 +9,9 @@ export class isAdmin extends Client{
         this.isAdmin = true;
     }
 
-
+    
     public getData():string{
-        return `${super.getData()} + Tenho o idAdmin: ${this.idAdmin}`;
+        return `${super.getData()} tengo el idAdmin: ${this.idAdmin}`;
     }
 
 }

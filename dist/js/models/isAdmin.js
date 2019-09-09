@@ -23,7 +23,7 @@ var isAdmin = /** @class */ (function (_super) {
         return _this;
     }
     isAdmin.prototype.getData = function () {
-        return _super.prototype.getData.call(this) + " + Tenho o idAdmin: " + this.idAdmin;
+        return _super.prototype.getData.call(this) + " tengo el idAdmin: " + this.idAdmin;
     };
     return isAdmin;
 }(Client_1.Client));
